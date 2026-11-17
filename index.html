@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Zirve Airbag Gölcük | Airbag ve emniyet kemeri onarımı</title>
   <meta name="description" content="Gölcük/Kocaeli'de airbag tamiri ve değişimi, emniyet kemeri onarımı, airbag beyni crash data silme, koltuk döşeme ve torpido işleri. 20 yıllık tecrübe. 0530 340 55 37">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'none'; base-uri 'none'; form-action 'none'; manifest-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="Zirve Airbag Gölcük">
@@ -12,16 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
 
-  <script>
-    /* tema: kayıtlı seçim, yoksa sistem; ilk boyamadan önce */
-    (function(){
-      var t;
-      try{t=localStorage.getItem('theme')}catch(e){}
-      if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
-      document.documentElement.dataset.theme=t;
-      document.documentElement.classList.add('js');
-    })();
-  </script>
+  <script src="theme.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +48,7 @@
 <body>
 
 <!-- ortak semboller -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<svg class="sprite" width="0" height="0" aria-hidden="true">
   <symbol id="srs" viewBox="0 0 32 32">
     <circle cx="10" cy="6.500" r="3.200" fill="currentColor"/>
     <path d="M8.500 12c-1.800.3-2.800 1.600-2.800 3.200v5.600c0 .9.700 1.600 1.600 1.600H12l1.400 4.800c.2.800.9 1.300 1.700 1.300h5.200c1 0 1.800-1 1.500-2l-.8-2.400c-.2-.7-.9-1.200-1.600-1.200h-2.700l-.9-3.300h-3.300v-3.200c0-.6.300-1.100.8-1.500.6-.4.500-1.400-.2-1.600z" fill="currentColor"/>
